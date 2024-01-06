@@ -15,6 +15,14 @@ npx expo run:android
 
 ### Build APK
 
+1. Remove `"projectId":` from `app.json`
+
+2. Build locally:
 ```shell
 eas build -p android --local
+```
+
+3. Build using [expo](https://expo.dev/):
+```shell
+eas build -p android
 ```
