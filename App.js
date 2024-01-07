@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { NativeModules } from 'react-native';
 
 const { FlashlightModule } = NativeModules;
@@ -16,9 +16,14 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Flashlight App</Text>
-      <Button title="Turn On Flashlight" onPress={turnOnFlashlight} />
-      <Button title="Turn Off Flashlight" onPress={turnOffFlashlight} />
+      <Text style={styles.appTitle}>Flashlight App</Text>
+      <TouchableOpacity style={styles.button} onPress={turnOnFlashlight}>
+        <Text style={styles.buttonText}>🔦 Turn On Flashlight</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.button} onPress={turnOffFlashlight}>
+        <Text style={styles.buttonText}>🚫 Turn Off Flashlight</Text>
+      </TouchableOpacity>
+      <StatusBar style="auto" />
     </View>
   );
 }
@@ -29,5 +34,20 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  appTitle: {
+    fontSize: 20,
+    marginBottom: 20,
+  },
+  button: {
+    backgroundColor: '#2196F3',
+    padding: 15,
+    margin: 10,
+    borderRadius: 10,
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 18,
+    textAlign: 'center',
   },
 });
