@@ -1,19 +1,28 @@
 # 🔦 lab42
-## Expo app with native android module to turn on the flashlight
+## Demo expo app with native android module to turn on the flashlight
 ----------
 
 ## ❓ Get started
 
-### Run using emulator
+
+#### 🏗️ Preparing
 
 ```shell
 git clone https://github.com/F33RNI/lab42
 cd lab42
 npm install
+```
+
+#### ♻️ Run using emulator / connected phone
+
+1. Start emulator / connect phone with USB debugging
+
+2. Run:
+```shell
 npx expo run:android
 ```
 
-### Build APK
+#### 📦 Build APK
 
 1. Remove `"projectId":` from `app.json`
 
