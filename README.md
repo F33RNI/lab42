@@ -1,9 +1,15 @@
 # 🔦 lab42
 ## Demo expo app with native android module to turn on the flashlight
+
+<div style="width:100%;text-align:center;">
+    <p align="center">
+        <img src="Screenshot.png" width="auto" height="400">
+    </p>
+</div>
+
 ----------
 
 ## ❓ Get started
-
 
 #### 🏗️ Preparing
 
